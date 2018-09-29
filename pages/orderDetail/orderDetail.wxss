@@ -1,0 +1,73 @@
+page {
+  background: #f6f6f8;
+}
+
+.orderDetailContainer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: white;
+  margin-top: 30rpx;
+}
+
+.orderDetailHeader {
+  margin: 40rpx;
+  height: 117rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  line-height: 117rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderDetailHeader text {
+  font-size: 30rpx;
+  color: #888;
+}
+
+.orderDetailHeader .price {
+  font-size: 48rpx;
+  color: black;
+}
+
+.orderDetail {
+  margin: 40rpx;
+  padding-bottom: 40rpx;
+  margin-bottom: 70rpx;
+}
+
+.orderDetail view {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.orderDetail text {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.orderDetailInfo {
+  max-width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.orderDetailBtns button {
+  width: 670rpx;
+  margin: auto;
+  height: 94rpx;
+  font-size: 36rpx;
+  margin-bottom: 40rpx;
+  border-radius: 10rpx;
+}
+
+.confirmBtn {
+  background: #06c15a;
+  color: white;
+}
+
+.cancelBtn {
+  background: white;
+  color: #4a4a4a;
+}

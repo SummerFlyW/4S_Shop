@@ -1,0 +1,215 @@
+page {
+  background: #f6f6f8;
+}
+
+.verifyContainer {
+  display: flex;
+  width: 100%;
+  height: 250rpx;
+  background: #1bbf65;
+}
+
+.codeVerify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 150rpx;
+  margin-top: 50rpx;
+}
+
+.scanCodeVerify {
+  border-right: 2rpx solid;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.codeText {
+  font-size: 30rpx;
+  color: white;
+  margin-top: 26rpx;
+}
+
+.codeImg {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.orderContainer {
+  background: #f6f6f8;
+  padding: 32rpx;
+}
+
+.orderStatus {
+  display: flex;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.triangle {
+  position: relative;
+  top: 16rpx;
+  left: 6rpx;
+  width: 0;
+  height: 0;
+  border-left: 10rpx solid transparent;
+  border-right: 10rpx solid transparent;
+  border-top: 10rpx solid #868686;
+}
+
+.orderTitle {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.listItem {
+  background: white;
+  margin-top: 32rpx;
+}
+
+.listItemHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx dashed rgba(0, 0, 0, 0.1);
+}
+
+.orderName {
+  font-size: 24rpx;
+  color: #484848;
+}
+
+.orderTime {
+  font-size: 24rpx;
+  color: #868686;
+}
+
+.orderTimeImg {
+  width: 24rpx;
+  height: 24rpx;
+  position: relative;
+  top: 4rpx;
+}
+
+.orderCarImg {
+  width: 32rpx;
+  height: 32rpx;
+  position: relative;
+  top: 6rpx;
+}
+
+.orderCar {
+  font-size: 26rpx;
+}
+
+.orderCar:first-child {
+  margin-bottom: 12rpx;
+}
+
+.orderInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+
+.orderInfoText {
+  color: #ff7300;
+}
+
+.listItemContainer {
+  padding: 24rpx;
+}
+
+.containerMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.enterCodeContainer {
+  width: 640rpx;
+  height: 400rpx;
+  background: white;
+  border-radius: 8rpx;
+  margin: auto;
+  margin-top: 170rpx;
+}
+
+.enterCodeTitle {
+  width: 100%;
+  height: 84rpx;
+  background: #f9f9f9;
+  border-top-left-radius: 8rpx;
+  border-top-right-radius: 8rpx;
+  font-size: 30rpx;
+  color: #949494;
+  line-height: 84rpx;
+}
+
+.enterCodeTitle text {
+  margin-left: 27rpx;
+}
+
+.enterCode input {
+  width: 500rpx;
+  height: 84rpx;
+  background: #ececee;
+  border-radius: 8rpx;
+  padding: 0 15rpx;
+  margin: auto;
+  margin-top: 68rpx;
+}
+
+.enterCodeBtns {
+  margin-top: 50rpx;
+}
+
+.enterCodeBtns button {
+  display: inline-block;
+  width: 232rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+
+.cancelBtn {
+  background: white;
+  border: 2rpx solid rgba(0, 0, 0, 0.1);
+  color: #949494;
+  margin-left: 55rpx;
+}
+
+.confirmBtn {
+  float: right;
+  background: #1bbf65;
+  color: white;
+  margin-right: 55rpx;
+}
+
+.noorderView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140rpx;
+  flex-direction: column;
+}
+
+.noorderImg {
+  width: 200rpx;
+  height: 160rpx;
+}
+
+.noorderView view {
+  font-size: 28rpx;
+  color: #868686;
+  margin-top: 45rpx;
+}

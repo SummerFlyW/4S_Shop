@@ -1,0 +1,37 @@
+<view class='statementBgColor'>
+  <view class='dataPlate'>
+    <view class="dataPlateTitle">数据看板</view>
+    <view class='dataPlateContainer'>
+      <view class='complete plateData'>
+        <view>
+          <text>{{complete}}</text>个
+        </view>
+        <view>已核销订单数</view>
+      </view>
+      <view class='waitService plateData'>
+        <view>
+          <text>{{waitService}}</text>个
+        </view>
+        <view>待服务订单数</view>
+      </view>
+    </view>
+  </view>
+  <view class='statementOrder'>
+    <view class='statementOrderTitle'>
+      <text class='line'></text>
+      <text class='orderTitle'>近7日核销订单数</text>
+    </view>
+    <view class='chartContainer'>
+      <canvas canvas-id="columnCanvasDay" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
+  </view>
+  <view class='statementOrder'>
+    <view class='statementOrderTitle'>
+      <text class='line'></text>
+      <text class='orderTitle'>近6个月完成订单数</text>
+    </view>
+     <view class='chartContainer'>
+      <canvas canvas-id="columnCanvasMonth" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
+  </view>
+</view>

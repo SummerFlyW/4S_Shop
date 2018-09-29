@@ -1,0 +1,86 @@
+page {
+  background: #f6f6f8;
+}
+
+.statementBgColor {
+  padding: 36rpx 0;
+}
+
+.dataPlate {
+  padding: 30rpx;
+  margin: auto;
+  width: 626rpx;
+  height: 162rpx;
+  background: white;
+  border-radius: 8rpx;
+}
+
+.dataPlateTitle {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.dataPlateContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.plateData {
+  width: 50%;
+  font-size: 24rpx;
+  color: #868686;
+}
+
+.plateData text {
+  font-size: 36rpx;
+  color: #333;
+  margin-right: 18rpx;
+}
+
+.plateData view:first-child {
+  margin-bottom: 12rpx;
+}
+
+.statementOrder {
+  width: 686rpx;
+  height: 500rpx;
+  background: white;
+  border-radius: 8rpx;
+  margin: auto;
+  margin-top: 20rpx;
+}
+
+.statementOrderTitle {
+  height: 80rpx;
+  width: 100%;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.statementOrderTitle .line {
+  width: 10rpx;
+  height: 22rpx;
+  background: #06c15a;
+  margin-left: 25rpx;
+  margin-right: 10rpx;
+}
+
+.statementOrderTitle .orderTitle {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.chartContainer {
+  width: 100%;
+  height: 418rpx;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}

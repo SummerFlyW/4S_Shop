@@ -1,0 +1,49 @@
+.useCodeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.useCodeImg {
+  width: 168rpx;
+  height: 144rpx;
+  margin: auto;
+  margin-top: 140rpx;
+}
+
+.useCodeContainer .text {
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-top: 80rpx;
+}
+
+.useCodeContainer .price {
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-top: 46rpx;
+}
+
+.useCodeContainer .project {
+  font-size: 28rpx;
+  color: #acacac;
+  margin-top: 22rpx;
+}
+
+.useCodeBtns {
+  display: flex;
+}
+
+.useCodeBtns button {
+  width: 240rpx;
+  height: 76rpx;
+  background: white;
+  border: 2rpx solid #9b9b9b;
+  margin-top: 70rpx;
+  font-size: 28rpx;
+  color: black;
+}
+.useCodeBtns button:first-child {
+  margin-right: 76rpx;
+}

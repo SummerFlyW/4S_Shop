@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/order/order",
+    "pages/orderDetail/orderDetail",
+    "pages/statement/statement",
+    "pages/useCode/useCode"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#06c15a",
+    "backgroundColor": "#f7f7f7",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index/orderActive.png",
+        "iconPath": "images/index/order.png",
+        "pagePath": "pages/order/order",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "images/index/statementActive.png",
+        "iconPath": "images/index/statement.png",
+        "pagePath": "pages/statement/statement",
+        "text": "报表"
+      }
+    ]
+  }
+}

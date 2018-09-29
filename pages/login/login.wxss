@@ -1,0 +1,68 @@
+.body {
+  width: 100%;
+}
+
+.loginInput {
+  display: inline-block;
+  margin-left: 26rpx;
+  margin-top: 48rpx;
+  font-size: 34rpx;
+  letter-spacing: 1rpx;
+}
+
+.loginAvater {
+  display: block;
+  width: 130rpx;
+  height: 130rpx;
+  margin: 52rpx auto 0;
+}
+
+.loginName {
+  width: 100%;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  color: #333;
+  margin: 24rpx auto;
+  margin-bottom: 50rpx;
+}
+
+.inputSection {
+  width: 686rpx;
+  height: 104rpx;
+  margin: auto;
+  border-bottom: 2rpx solid #eee;
+}
+
+.inputIcon {
+  position: relative;
+  top: -10rpx;
+  margin-left: 46rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.submitBtn {
+  width: 670rpx;
+  height: 94rpx;
+  background: #06c15a;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  font-weight: normal;
+  color: #fff;
+  line-height: 94rpx;
+  margin-top: 60rpx;
+}
+
+.loginCompany {
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  color: #acacac;
+  margin: 440rpx auto 20rpx;
+}

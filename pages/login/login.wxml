@@ -1,0 +1,16 @@
+<view class="body">
+  <image src="../../images/login/home.png" class="loginAvater"></image>
+  <view class="loginName">4S店团购</view>
+  <form bindsubmit="formSubmit">
+    <view class="inputSection">
+      <image src="../../images/login/phone.png" class="inputIcon"></image>
+      <input class="loginInput" name="phone" placeholder-style="color:#ccc" maxlength="11" type="number" placeholder="请输入手机号" value="{{phone}}" />
+    </view>
+    <view class="inputSection">
+      <image src="../../images/login/password.png" class="inputIcon"></image>
+      <input class="loginInput" name="password" placeholder-style="color:#ccc" password type="text" placeholder="请输入密码" value="{{password}}" />
+    </view>
+    <button class="submitBtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" formType="submit">登录</button>
+  </form>
+  <view class="loginCompany">阿基米米科技（北京）有限公司版权所有</view>
+</view>

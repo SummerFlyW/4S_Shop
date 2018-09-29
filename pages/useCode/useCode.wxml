@@ -1,0 +1,10 @@
+<view class='useCodeContainer'>
+  <image src="../../images/useCode/useSuccess.png" class="useCodeImg"></image>
+  <view class="text">团购码使用成功</view>
+  <view class='price'>¥{{orderPrice}}</view>
+  <view class='project'>{{orderProduct}}</view>
+  <view class='useCodeBtns'>
+    <button class='showOrderBtn' bindtap="showOrder">查看订单</button>
+    <button class='backIndexBtn' bindtap="backIndex">返回首页</button>
+  </view>
+</view>

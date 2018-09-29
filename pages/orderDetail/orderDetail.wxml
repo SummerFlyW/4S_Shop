@@ -1,0 +1,47 @@
+<view class='orderDetailContainer'>
+  <view class='orderDetailHeader'>
+    <text>合计</text>
+    <text class='price'>¥{{orderInfo.pay_sum}}</text>
+  </view>
+  <view class='orderDetail'>
+    <view wx:if="{{!tap}}">
+      <text>团购码</text>
+      <text class='orderDetailInfo'>{{orderInfo.consume_code.code}}</text>
+    </view>
+    <view>
+      <text>车牌号</text>
+      <text class='orderDetailInfo'>{{orderInfo.auto_license.string}}</text>
+    </view>
+    <view>
+      <text>车型</text>
+      <text class='orderDetailInfo'>{{orderInfo.auto_model.brand_name}}{{orderInfo.auto_model.series_name}}{{orderInfo.auto_model.model_name}}</text>
+    </view>
+    <view>
+      <text>款型</text>
+      <text class='orderDetailInfo'>{{orderInfo.auto_model.brief}}</text>
+    </view>
+    <view>
+      <text>手机号</text>
+      <text class='orderDetailInfo'>{{orderInfo.contact_mobile}}</text>
+    </view>
+    <view wx:for="{{orderInfo.product_items}}" wx:for-index="idx" wx:for-item="ordersData" wx:key="ordersData">
+      <text>服务项目{{idx+1}}</text>
+      <text class='orderDetailInfo'>{{ordersData.metadata[0].value}}／¥{{ordersData.channel_price}}</text>
+    </view>
+    <view>
+      <text>交易时间</text>
+      <text class='orderDetailInfo'>{{orderTime}}</text>
+    </view>
+    <view>
+      <text>订单编号</text>
+      <text class='orderDetailInfo'>{{orderInfo.barcode}}</text>
+    </view>
+  </view>
+</view>
+<view class='orderDetailBtns' wx:if="{{orderInfo.status==orderNoUse && !tap}}">
+  <button class='confirmBtn' bindtap="useCode">确认使用</button>
+  <button class='cancelBtn' bindtap="cancelUseCode">取消</button>
+</view>
+<view class='orderDetailBtns' wx:else>
+  <button class='confirmBtn' bindtap="goHome">返回首页</button>
+</view>

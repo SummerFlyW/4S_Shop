@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="indexContainer">
+  <view class="verifyContainer">
+    <view class="scanCodeVerify codeVerify" bindtap='scanCode'>
+      <image src="../../images/index/richScan.png" class="codeImg"></image>
+      <text class="codeText">扫描团购码</text>
+    </view>
+    <view class="codeVerify" bindtap="showEnterCode">
+      <image src="../../images/index/import.png" class="codeImg"></image>
+      <text class="codeText">手工输入团购码</text>
+    </view>
+  </view>
+  <view class="orderContainer">
+    <view class='orderHeader'>
+      <text class='orderTitle'>订单列表</text>
+      <view bindtap="actioncnt" class='orderStatus'>订单状态：{{orderStatusName}}
+        <view class='triangle'></view>
+      </view>
+    </view>
+    <view wx:if="{{ordersData.length>0}}">
+      <view class='orderList' wx:for="{{ordersData}}" wx:for-index="idx" wx:for-item="ordersData" wx:key="ordersData">
+        <block wx:if="{{ordersData.status==orderStutas && !ordersData.refund_status}}">
+          <view wx:if="{{ordersData}}">
+            <view class='listItem' bindtap='orderDetail' data-id="{{ordersData._id}}">
+              <view class='listItemHeader listItemContainer'>
+                <text class='orderName'>4S店团购-{{ordersData.barcode}}</text>
+                <view class='orderTime'>
+                  <image src="../../images/index/time.png" class="orderTimeImg"></image>
+                  {{ordersData.creatTime}}
+                </view>
+              </view>
+              <view class="listItemContainer">
+                <view class='orderCar'>
+                  <image src="../../images/index/car.png" class="orderCarImg"></image>
+                  {{ordersData.auto_license.string}}/{{ordersData.auto_model.brand_name}}{{ordersData.auto_model.series_name}}
+                </view>
+                <view class='orderCar'>
+                  <image src="../../images/index/orderList.png" class="orderCarImg"></image>
+                  服务项目：{{ordersData.productsStr}}</view>
+                <view class='orderInfo'>
+                  <view>
+                    合计：
+                    <text class='orderInfoText'>{{ordersData.pay_sum}}</text>
+                  </view>
+                  <view>
+                    状态：
+                    <text class='orderInfoText'>{{orderStatusName}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view wx:else class='noorderView'>
+            <image src="../../images/index/noorder.png" class="noorderImg"></image>
+            <view>没有此状态的订单</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view wx:else class='noorderView'>
+      <image src="../../images/index/noorder.png" class="noorderImg"></image>
+      <view>没有此状态的订单</view>
+    </view>
+  </view>
+</view>
+<view class='containerMask' wx:if="{{enterCode}}">
+  <view class='enterCodeContainer'>
+    <view class='enterCodeTitle'>
+      <text>手工输入团购码</text>
+    </view>
+    <view class='enterCode'>
+      <input bindinput="voteTitle" />
+    </view>
+    <view class='enterCodeBtns'>
+      <button class='cancelBtn' bindtap="hiddenEnterCode">取消</button>
+      <button class='confirmBtn' bindtap="showOrderDeatil">确定</button>
+    </view>
+  </view>
+</view>
